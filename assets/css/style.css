@@ -1,0 +1,16 @@
+.pic1, .pic2, .pic3 {
+    display: inline-block;
+    margin: 20px 5px;
+    min-width: 400px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+   
+}
+
+
+
+.content {
+    text-align:left;
+    padding: 10px 30px;
+}
