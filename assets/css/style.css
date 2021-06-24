@@ -4,10 +4,14 @@
     --circleUp_radius: 100px;
     --circleBt_right: -10px;
     --circleBt_bottom: -50px;
-    --circleBt_radius: 120px
+    --circleBt_radius: 120px;
+    --picture_right: 10px;
+    --picture_top: 10px;
 }
 
-.pic1::after, .pic2::after, .pic3::after {
+.pic1::after, 
+.pic2::after, 
+.pic3::after {
     /* display: block; */
     content: "";
     width: var(--circleUp_radius);
@@ -21,7 +25,9 @@
     
   }
 
-  .pic1::before, .pic2::before, .pic3::before {
+  .pic1::before, 
+  .pic2::before, 
+  .pic3::before {
     /* display: block; */
     content: "";
     width: var(--circleBt_radius);
@@ -36,7 +42,9 @@
   }
 
 
-.pic1, .pic2, .pic3 {
+.pic1, 
+.pic2, 
+.pic3 {
     display: inline-block;
     position: relative;
     margin: 20px 5px;
@@ -50,16 +58,15 @@
 }
 
 .pic1 {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-
+    background: linear-gradient(#ffb898,#ff8798);
 }
 
 .pic2 {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(#8cc7f7, #1b92e3);
 }
 
 .pic3 {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(#7cd9d1, #09d0b9);
 }
 
 .content {
@@ -74,7 +81,7 @@
 
 .chart-line, .bookmark, .diamond {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: var(--picture_right);
+    top: var(--picture_top);
 
 }
